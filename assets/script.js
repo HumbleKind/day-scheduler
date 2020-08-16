@@ -2,6 +2,7 @@ $(document).ready(function(){
 // group all code here to run when DOM is ready
 
     var currentHour = moment().format('HH');
+    // console.log(currentHour);
 
     var timeBlock = $(".time-block");
     // console.log(timeBlock);
@@ -16,7 +17,7 @@ $(document).ready(function(){
         // console.log($(this).attr("data-hour"));
         // console.log($(this).data("hour"));
     
-        var thisHour = 10; //parseInt($(this).data("hour"));
+        var thisHour = parseInt($(this).data("hour"));
 
         $(this).removeClass("past present future");
 
