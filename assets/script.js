@@ -39,4 +39,8 @@ $(document).ready(function(){
         }
     })
 
+    $(".saveBtn").click(function() {
+        console.log("Button clicked!")
+    })
+
 });
